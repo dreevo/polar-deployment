@@ -70,6 +70,15 @@ services:
     volumes: 
       - ./postgresql/init.sql:/docker-entrypoint-initdb.d/init.sql
 
+  polar-rabbitmq:
+    image: rabbitmq:3.10-management 
+    container_name: polar-rabbitmq
+    ports:
+      - 5672:5672 
+      - 15672:15672 
+    volumes: 
+      - ./rabbitmq/rabbitmq.conf:/etc/rabbitmq/rabbitmq.conf
+
   polar-redis:
     image: "redis:7.0" 
     container_name: "polar-redis"
