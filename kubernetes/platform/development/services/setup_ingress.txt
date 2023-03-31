@@ -1,0 +1,8 @@
+kubectl create namespace ingress-nginx
+helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
+helm install ingress-nginx ingress-nginx/ingress-nginx --namespace ingress-nginx
+kubectl get pods -n ingress-nginx
+
+kubectl scale deployment -n ingress-nginx --replicas=0
+#FOR LOCAL DEV 
+Add-Content C:\Windows\System32\drivers\etc\hosts "127.0.0.1 polar-keycloak"

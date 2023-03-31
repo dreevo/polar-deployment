@@ -1,6 +1,6 @@
 include('F:\\21655\\Documents\\Workshop\\Spring Workshop\\config-repo\\config-service\\Tiltfile')
 include('F:\\21655\\Documents\\Workshop\\Spring Workshop\\catalog-service\\Tiltfile')
 include('F:\\21655\\Documents\\Workshop\\Spring Workshop\\order-service\\Tiltfile')
-include('F:\\21655\\Documents\\Workshop\\Spring Workshop\\dispatcher-servive\\Tiltfile')
+include('F:\\21655\\Documents\\Workshop\\Spring Workshop\\dispatcher-service\\Tiltfile')
 include('F:\\21655\\Documents\\Workshop\\Spring Workshop\\edge-servive\\Tiltfile')
 update_settings(max_parallel_updates=1)
